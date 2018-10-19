@@ -2,6 +2,7 @@ package com.example.sereg.taxi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class ActualTrips extends AppCompatActivity {
 

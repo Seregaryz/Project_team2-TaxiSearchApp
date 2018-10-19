@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActualTrips"></activity>
+        <activity android:name=".ActualTrips">
+            <intent-filter>
+                <action android:name="com.example.sereg.taxi.ActualTrips" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

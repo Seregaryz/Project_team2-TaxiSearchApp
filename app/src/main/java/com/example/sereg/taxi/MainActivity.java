@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
-                Intent intent = new Intent(this, ActualTrips.class);
+                Intent intent = new Intent("com.example.sereg.taxi.ActualTrips" );
+                startActivity(intent);
                 break;
             default:
                 break;
