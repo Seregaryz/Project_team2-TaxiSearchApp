@@ -23,6 +23,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".CreateTrip"></activity>
+            <intent-filter>
+                <action android:name="com.example.sereg.taxi.CreateTrip" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
     </application>
 
 </manifest>
