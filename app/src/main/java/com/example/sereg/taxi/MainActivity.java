@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     Button button1;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +22,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(this);
+
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.button1:
+            case R.id.button2:
                 Intent intent = new Intent("com.example.sereg.taxi.ActualTrips" );
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button1:
+                Intent intent = new Intent("com.example.sereg.taxi.CreateTrip" );
                 startActivity(intent);
                 break;
             default:
