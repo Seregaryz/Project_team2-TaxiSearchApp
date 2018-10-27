@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+
+
 public class CreateTrip extends AppCompatActivity {
 
     @Override
@@ -12,6 +14,7 @@ public class CreateTrip extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_trip);
     }
+
 
     public void onButtonClick(View v){
         EditText name = (EditText)findViewById(R.id.Name);
